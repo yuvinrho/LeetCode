@@ -7,8 +7,7 @@ class Solution {
         if numRows == 2 { return pascalTriangle }
           
         for i in 2..<numRows {
-            var currentPascalTriangle: [Int] = []
-            currentPascalTriangle.append(1)
+            var currentPascalTriangle: [Int] = [1]
             for j in 0..<prevPascalTriangle.count - 1 {
                 currentPascalTriangle.append(prevPascalTriangle[j] + prevPascalTriangle[j + 1])
             }
